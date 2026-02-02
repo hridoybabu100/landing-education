@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 85%;
+    margin:  0 auto;
+}
+#header {
+    background-color: #23BDEE;
+}
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+#navigation img {
+    width: 100px;
+    height: 50px;
+}
+#navigation > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+#navigation > ul > li {
+    list-style: none;
+}
+#navigation > ul > li > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.nav-btn button {
+    background-color: #FFFFFF;
+    padding: 8px 30px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+
+}
+
+/* hero-section code hare  */
+.hero-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-contant h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.hero-contant p {
+    color: #FFFFFF;
+     margin-bottom: 15px;
+}
+.hero-img img {
+    width: 544px;
+    vertical-align: middle;
+}
+.hero-btn button {
+    padding: 10px 30px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+}
+.hero-btn-p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-icon {
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.hero-btn-p p {
+    padding-top: 10px;
+    color: black;
+}
+#hero {
+    position: relative;
+    margin-bottom: 50px;
+}
+.asistant-p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+.asistant-p img {
+    width: 50px;
+}
+
+
+/* Our Success ssection code hare  */
+#success {
+    margin-bottom: 60px;
+}
+.success-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.success-heading p {
+    color: #010514;
+    margin-top: 20px;
+}
+.success-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.success-card {
+    background-color: #ffffff77;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 1px 3px rgb(239, 228, 228);
+}
+
+/* cloud section code start  */
+#cloud {
+    margin-bottom: 50px;
+}
+.cloud-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.cloud-card {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f2f29c;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px grey;
+}
+.cloud-card *{
+    margin-bottom: 15px;
+}
+.cloud-card img {
+    width: 100px;
+}
+
+/* totc section code start  */
+#totc {
+    margin-bottom: 60px;
+}
+.totc-img-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.totc-img-p img {
+    width: 500px;
+}
+
+
+
+
+
+/* responsive desing code hare  */
+
+@media screen and (max-width: 1200px){
+    .container {
+    width: 85%;
+    margin:  0 auto;
+}
+.asistant-p {
+    display: none;
+}
+.hero-p {
+    flex-direction: column;
+    text-align: center;
+}
+.cloud-p {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.totc-img-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+}
+@media screen and (max-width: 1024px){
+    .container {
+    width: 90%;
+    margin:  0 auto;
+}
+#navigation > ul{
+    display: none;
+}
+.success-p {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+}
+@media screen and (max-width: 768px){
+    .container {
+    width: 93%;
+    margin:  0 auto;
+}
+}
+@media screen and (max-width: 577px){
+    .container {
+    width: 96%;
+    margin:  0 auto;
+}
+.hero-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+.hero-contant h1 {
+    font-size: 30px;
+}
+.hero-contant p {
+     margin-bottom: 15px;
+}
+.hero-icon {
+    padding-left: 2px;
+}
+.success-p {
+    flex-direction: column;
+    gap: 40px;
+}
+.success-card {
+    width: 70%;
+    text-align: center;
+}
+.cloud-card {
+    width: 90%;
+    height: 60%;
+}
+.totc-img-p img {
+    width: 100%;
+}
+.totc-img-p {
+    gap: 30px;
+}
+
+
+}
