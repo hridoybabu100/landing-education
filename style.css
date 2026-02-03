@@ -204,6 +204,87 @@
     width: 600px;
 }
 
+/* feature section code start  */
+#feature {
+    margin-bottom: 60px;
+}
+.feature-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+.feature-img-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #EAEAEA;
+    width: 785px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.feature-single-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.feature-img-single-card img {
+    width: 250px;
+}
+.feature-single-card img {
+    width: 160px;
+}
+.feature-contant h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.feature-contant-p {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.feature-btn button {
+    background-color: #3465E1;
+    color: #FFFFFF;
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.feature-btn {
+    text-align: center;
+}
+
+/* tools section code start  */
+#tools {
+    margin-bottom: 60px;
+}
+.tools-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.tools-contant h1 {
+    color: #010514;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.tools-img {
+    width: 640px;
+    background-image: url(./images/Group\ 75.png);
+    text-align: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tools-img img {
+    width: 390px;
+    vertical-align: middle;
+}
 
 
 
@@ -250,6 +331,11 @@
     height: 500px;
 } */
 
+.feature-p{
+    flex-direction: column;
+    text-align: center;
+}
+
 }
 @media screen and (max-width: 1024px){
     .container {
@@ -265,6 +351,15 @@
     align-items: center;
     gap: 50px;
 }
+.feature-img-card {
+    flex-direction: column;
+    width: 100%;
+    
+}
+.tools-p {
+    flex-direction: column;
+    text-align: center;
+}
 
 }
 @media screen and (max-width: 768px){
@@ -278,6 +373,9 @@
 }
 
 #vedio {
+    width: 100%;
+}
+.tools-img {
     width: 100%;
 }
 
@@ -328,7 +426,22 @@
     width: 100%;
     height: 280px;
 }
-
+.feature-single-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
+.feature-contant-p {
+    flex-direction: column;
+}
+.tools-img img {
+    width: 50%;
+}
+.tools-contant h1 {
+    color: #010514;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
 }
 
