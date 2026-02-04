@@ -42,7 +42,12 @@
     cursor: pointer;
     border: none;
     border-radius: 50px;
+    transition: 1s;
 
+}
+.nav-btn button:hover {
+    background-color: #3a5fe3;
+    color: #FFFFFF;
 }
 
 /* hero-section code hare  */
